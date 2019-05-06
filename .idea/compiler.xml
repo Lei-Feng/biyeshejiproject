@@ -12,12 +12,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="biyesheji-project" target="1.7" />
-      <module name="lc-common" target="1.7" />
-      <module name="lc-producer" target="1.7" />
-      <module name="project-logcollection" target="1.7" />
-      <module name="project-resultvisualization" target="1.7" />
-      <module name="rv-web" target="1.7" />
+      <module name="biyesheji-project" target="1.5" />
+      <module name="lc-common" target="1.5" />
+      <module name="lc-producer" target="1.5" />
+      <module name="project-logcollection" target="1.5" />
+      <module name="project-resultvisualization" target="1.5" />
+      <module name="rv-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
