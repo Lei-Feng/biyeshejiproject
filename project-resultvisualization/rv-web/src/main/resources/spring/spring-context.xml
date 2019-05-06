@@ -12,13 +12,13 @@
     <!-- IoC -->
 
     <!-- 扫描注解类 -->
-    <context:component-scan base-package="com.feng.*" >
+    <context:component-scan base-package="com.feng.rv.web.*" >
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
     
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" >
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://linux1:3306/ct180808?rewriteBatchedStatements=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/biyesheji?rewriteBatchedStatements=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
         <property name="user" value="root"/>
         <property name="password" value="123456"/>
     </bean>
@@ -36,7 +36,7 @@
 
     <!--扫描Dao接口，用于和Mybatis进行集成 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
-        <property name="basePackage" value="com.feng.ct.web.dao" />
+        <property name="basePackage" value="com.feng.rv.web.dao" />
     </bean>
     
     <!-- AOP -->

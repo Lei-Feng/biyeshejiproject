@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/biyesheji-project.iml" filepath="$PROJECT_DIR$/biyesheji-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-logcollection/lc-common/lc-common.iml" filepath="$PROJECT_DIR$/project-logcollection/lc-common/lc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-logcollection/lc-producer/lc-producer.iml" filepath="$PROJECT_DIR$/project-logcollection/lc-producer/lc-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-logcollection/project-logcollection.iml" filepath="$PROJECT_DIR$/project-logcollection/project-logcollection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-resultvisualization/project-resultvisualization.iml" filepath="$PROJECT_DIR$/project-resultvisualization/project-resultvisualization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-resultvisualization/rv-web/rv-web.iml" filepath="$PROJECT_DIR$/project-resultvisualization/rv-web/rv-web.iml" />
+    </modules>
+  </component>
+</project>
