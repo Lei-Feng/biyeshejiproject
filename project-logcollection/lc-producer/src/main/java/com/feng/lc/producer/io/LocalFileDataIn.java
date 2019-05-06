@@ -18,7 +18,6 @@ public class LocalFileDataIn implements DataIn {
         setPath(path);
     }
 
-    @Override
     public void setPath(String path) {
         try {
 
@@ -28,7 +27,6 @@ public class LocalFileDataIn implements DataIn {
         }
     }
 
-    @Override
     public Object read() throws IOException {
         return null;
     }
@@ -40,9 +38,8 @@ public class LocalFileDataIn implements DataIn {
      * @return
      * @throws IOException
      */
-    @Override
     public <T extends Data> List<T> read(Class<T> clazz) throws IOException {
-        List<T> ts = new ArrayList<>();
+        List<T> ts = new ArrayList<T>();
 
         try {
 
@@ -67,7 +64,6 @@ public class LocalFileDataIn implements DataIn {
      * 关闭资源
      * @throws IOException
      */
-    @Override
     public void close() throws IOException {
         if (null != reader) {
             reader.close();

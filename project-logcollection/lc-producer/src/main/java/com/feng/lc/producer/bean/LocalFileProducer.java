@@ -18,12 +18,10 @@ public class LocalFileProducer implements Producer {
 
     private volatile boolean falg = true;
 
-    @Override
     public void setIn(DataIn in) {
         this.in = in;
     }
 
-    @Override
     public void setOut(DataOut out) {
         this.out = out;
     }
@@ -31,7 +29,6 @@ public class LocalFileProducer implements Producer {
     /**
      * 生产数据
      */
-    @Override
     public void produce() {
         try {
 
@@ -61,7 +58,6 @@ public class LocalFileProducer implements Producer {
      * 关闭生产者
      * @throws IOException
      */
-    @Override
     public void close() throws IOException {
         if (null != in) {
             in.close();
