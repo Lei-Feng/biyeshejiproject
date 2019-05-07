@@ -1,0 +1,8 @@
+create table sogou (qtime string, qid string, qword string, url string) row format delimited fields terminated by ',';
+load data inpath '/biyesheji/input/sogou_clean.dic' into table sogou;
+select count(*) from sogou;
+create table sogou_results as select keyword, count(1) as count from (select qword as keyword from sogou) t group by keyword order by count desc;
+select * from sogou_results limit 10;
+
+insert overwrite local directory '/biyesheji/data' row format delimited fields terminated by '\t' select * from sogou;
+insert overwrite local directory '/biyesheji/results' row format delimited fields terminated by '\t' select * from sogou_results;
