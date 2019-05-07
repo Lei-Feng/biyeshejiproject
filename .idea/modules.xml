@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/project-logcollection/lc-producer/lc-producer.iml" filepath="$PROJECT_DIR$/project-logcollection/lc-producer/lc-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-logcollection/project-logcollection.iml" filepath="$PROJECT_DIR$/project-logcollection/project-logcollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-resultvisualization/project-resultvisualization.iml" filepath="$PROJECT_DIR$/project-resultvisualization/project-resultvisualization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-analysis/projectanalysis.iml" filepath="$PROJECT_DIR$/project-analysis/projectanalysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-resultvisualization/rv-web/rv-web.iml" filepath="$PROJECT_DIR$/project-resultvisualization/rv-web/rv-web.iml" />
     </modules>
   </component>

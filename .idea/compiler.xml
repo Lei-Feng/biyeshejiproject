@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lc-common" />
         <module name="lc-producer" />
+        <module name="projectanalysis" />
         <module name="rv-web" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="lc-producer" target="1.5" />
       <module name="project-logcollection" target="1.5" />
       <module name="project-resultvisualization" target="1.5" />
+      <module name="projectanalysis" target="1.5" />
       <module name="rv-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>

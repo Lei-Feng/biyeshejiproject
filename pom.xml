@@ -11,6 +11,7 @@
     <modules>
         <module>project-logcollection</module>
         <module>project-resultvisualization</module>
+        <module>project-analysis</module>
     </modules>
 
 
