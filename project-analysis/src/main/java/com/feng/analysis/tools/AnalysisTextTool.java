@@ -22,18 +22,18 @@ public class AnalysisTextTool implements Tool {
         job.setJarByClass(AnalysisTextTool.class);
 
         Scan scan = new Scan();
-        scan.addFamily(Bytes.toBytes(Names.CF_CALLER.getValue());
-
-
-        // mapper
-        TableMapReduceUtil.initTableMapperJob(
-                Names.TABLE.getValue(),
-                scan,
-                AnalysisTextMapper.class,
-                Text.class,
-                Text.class,
-                job
-        );
+//        scan.addFamily(Bytes.toBytes(Names.CF_CALLER.getValue());
+//
+//
+//        // mapper
+//        TableMapReduceUtil.initTableMapperJob(
+//                Names.TABLE.getValue(),
+//                scan,
+//                AnalysisTextMapper.class,
+//                Text.class,
+//                Text.class,
+//                job
+//        );
 
         // reducer
         job.setReducerClass(AnalysisTextReducer.class);
@@ -41,7 +41,7 @@ public class AnalysisTextTool implements Tool {
         job.setOutputValueClass(Text.class);
 
         // outputformat
-        job.setOutputFormatClass(MysqlTextOutputFormat.class);
+//        job.setOutputFormatClass(MysqlTextOutputFormat.class);
 
 
         boolean flg = job.waitForCompletion(true);
@@ -50,7 +50,7 @@ public class AnalysisTextTool implements Tool {
         } else {
             return JobStatus.State.FAILED.getValue();
         }
-        return 0;
+//        return 0;
     }
 
     public void setConf(Configuration configuration) {
